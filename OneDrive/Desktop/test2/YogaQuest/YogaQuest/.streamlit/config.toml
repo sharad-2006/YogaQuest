@@ -1,0 +1,41 @@
+# Streamlit Configuration for YogaQuest Production Deployment
+# Place this file in: .streamlit/config.toml
+
+[server]
+# Performance optimizations
+port = 8501
+enableCORS = false
+enableXsrfProtection = false
+maxUploadSize = 200
+
+# Headless mode for deployment
+headless = false
+
+[browser]
+# Disable usage stats collection
+gatherUsageStats = false
+
+# Server address (use your domain in production)
+serverAddress = "localhost"
+
+[runner]
+# Enable fast reruns for smoother experience
+fastReruns = true
+
+# Disable magic commands
+magicEnabled = false
+
+[client]
+# Toolbar visibility
+toolbarMode = "minimal"
+
+# Show error details in development only
+showErrorDetails = false
+
+[theme]
+# Custom YogaQuest theme (optional)
+primaryColor = "#f9d423"
+backgroundColor = "#0f0c29"
+secondaryBackgroundColor = "#302b63"
+textColor = "#ffffff"
+font = "sans serif"
